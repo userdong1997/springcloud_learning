@@ -6,6 +6,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 // 开启eureka的客户端注解
+
 @EnableEurekaClient
 public class UserApp {
 
