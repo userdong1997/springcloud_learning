@@ -1,16 +1,16 @@
-package com.dong.userdemo;
+package com.dong.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+
 
 @SpringBootApplication
-// 开启eureka的客户端注解
-
+@EnableZuulProxy
 @EnableEurekaClient
-public class UserApp {
-
+public class ZuulClientApp {
     public static void main(String[] args) {
-        SpringApplication.run(UserApp.class, args);
+        SpringApplication.run(ZuulClientApp.class,args);
     }
 }
